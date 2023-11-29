@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\models",
+    "\\routes",
+    "\\views",
+    "\\views\\campgrounds"
+  ],
+  "SelectedNode": "\\models\\campground.js",
+  "PreviewInSolutionExplorer": false
+}

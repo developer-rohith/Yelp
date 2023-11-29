@@ -1,0 +1,32 @@
+<%- layout('layouts/boilerPlate')%>
+    <h1>ALL CampGrounds</h1>
+    <!-- <div>
+        <a href="campgrounds/new">Add new </a>
+    </div> -->
+    <ul>
+        <% for(c of camps){%>
+            <div class="card" mb-3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="<%= c.images[0].url%>" alt=""">
+                    </div>
+                    <div class=" col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= c.title%>
+                            </h5>
+                            <p class="card-text">
+                                <%=c.description%>
+                            </p>
+                            <p class="card-text"><small class="text-muted">
+                                    <%= c.location%>
+                                </small></p>
+                            <a href="/campgrounds/<%=c._id%>" class="btn btn-primary">View <%= c.title%></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <% }%>
+    </ul>
